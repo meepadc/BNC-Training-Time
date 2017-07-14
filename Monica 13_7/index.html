@@ -7,49 +7,47 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
 	<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	
+	<script type="text/javascript" src="vendor/OwlCarouesl2-2.2.1/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/myJS.js"></script>	
 </head>
 <body>
-<header id="header">
-	<!-- Header_mobile -->
+<header class="header">
+	<div class="container bg_header">
 
-	<!-- End_Header_mobile -->
 
 
 	<!-- Header -->
-	<div class="top_header">
+	<div class="top_header hidden-xs hidden-sm">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 top_header_left">
+				<div class="col-xs-12 col-sm-3 col-md-3 top_header_left">
 					<p><a href="#">Login in</a> or <a href="#">Register</a></p>
 				</div>
-				<div class="col-md-6 logo">
+				<div class="col-xs-12 col-sm-6 col-md-6 logo">
 					<img src="img/logo.png" alt="Logo" class="img-responsive" />
 				</div>
-				<div class="col-md-3 top_header_right text-center">
-	                <div class="input-group stylish-input-group pull-right">
-	                    <input type="text" class="form-control"  placeholder="Search" >
+				<div class="col-xs-12 col-sm-3 col-md-3 top_header_right">
+	                <div class="input-group stylish-input-group text-right">
+	                    <input type="text" class="form-control"  placeholder="Search Products..." >
 						<div class="btn_search"><span class="glyphicon glyphicon-search"></span></div>
 	                </div>					
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="menu_header">
+	<div class="menu_header hidden-xs hidden-sm">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-				   <section class="menu_button">
-				      <div id="menu_button_line_main">
-				         <span class="menu_button_line menu_button_line_1"></span>
-				         <span class="menu_button_line menu_button_line_2"></span>
-				         <span class="menu_button_line menu_button_line_3"></span>
-				      </div>
-				   </section>					
+			<div class="row" >
+				<div class="col-md-2 btn_Menu">
+				 <a href="#" title="#">
+				 	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>	
+				 </a>				
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-8 hidden-xs hidden-sm">
 					<ul class="menu_header_list">
 						<li class="menu_header_list_items"><a href="#" title="Menu">Women</a></li>
 						<li class="menu_header_list_items"><a href="#" title="Menu">Men</a></li>
@@ -59,75 +57,99 @@
 						<li class="menu_header_list_items active"><a href="#" title="Menu">Sale</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 icon_header">
+				<div class="col-md-2 icon_header">
 					<a href="#" title="#"><i class="fa fa-shopping-bag pull-right color_white" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- End header -->
+	<!-- End header -->		
+	</div>
+
 </header>
 
-<div class="jumbotron">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-9 jumbotron_left">
-				<h1><span>2015</span><strong>NEW</strong><br>Collections</h1>
-				<p>New colors and creative prints!</p>
-				<button type="button" class="btn btn-primary">SHOP NOW</button>	
-			</div>
-			<div class="col-xs-12 col-md-3 jumbotron_right">
-				<ul>
-					<li><a href="#" title="#">The new collection of fashionable shirts</a></li>
-					<li><a href="#" title="#">2015 Collection New color and prints</a></li>
-					<li><a href="#" title="#">Sale of the day! Discounts of 20 to 50% on all products</a></li>
-					<li><a href="#" title="#">New items of the summer New swimwear on sale now</a></li>
-				</ul>
-			</div>
+<div class="jumbotron container">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 jumbotron_left">
+			<h1><span>2015</span><strong>NEW</strong><br>Collections</h1>
+			<p>New colors and creative prints!</p>
+			<button type="button" class="btn_shopNow">SHOP NOW</button>	
+		</div>
+		<div class="col-xs-12 col-md-4 pull-right jumbotron_right">
+			<ul class="jumbotron_right_list" >
+				<li class="jumbotron_right_list_item">
+					<a href="#" title="#">The new collection of <br> fashionable shirts</a>
+				</li>
+				<li class="jumbotron_right_list_item active1">
+					<a href="#" title="#">2015 Collection <br> New color and prints</a>
+				</li>
+				<li class="jumbotron_right_list_item">
+					<a href="#" title="#">Sale of the day! Discounts <br> of 20 to 50% on all products</a>
+				</li>
+				<li class="jumbotron_right_list_item">
+					<a href="#" title="#">New items of the summer <br> New swimwear on sale now</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>
 
 <div class="products">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-3 text-center" >
+		<div class="row text-center">
+			<div class="col-xs-12 col-md-3 products_x" >
 				<figcaption class="products_items">
 					<h4 class="products_items_title">Denim Shorts In Slim Fit</h4>
 					<p class="products_items_type">Short</p>
 					<figure class="products_items_img">
 						<!-- img -->
 					</figure>
+						<div class="products_items_details text-center">
+						<button class="btn_addToBag">Add To Bag <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button> 
+						<p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Add to wishlist</p>  
+						</div>
 					<p class="products_items_price">$124</p>
 				</figcaption>
 			</div>
-			<div class="col-xs-12 col-md-3">
+			<div class="col-xs-12 col-md-3 products_x">
 				<figcaption class="products_items">
 					<h4 class="products_items_title">Denim Shorts In Slim Fit</h4>
 					<p class="products_items_type">Short</p>
 					<figure class="products_items_img">
 						<!-- img -->
 					</figure>
+						<div class="products_items_details text-center">
+						<button class="btn_addToBag">Add To Bag <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button> 
+						<p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Add to wishlist</p>  
+						</div>					
 					<p class="products_items_price">$124</p>
 				</figcaption>				
 			</div>
-			<div class="col-xs-12 col-md-3">
+			<div class="col-xs-12 col-md-3 products_x">
 				<figcaption class="products_items">
 					<h4 class="products_items_title">Denim Shorts In Slim Fit</h4>
 					<p class="products_items_type">Short</p>
 					<figure class="products_items_img">
 						<!-- img -->
 					</figure>
+						<div class="products_items_details text-center">
+						<button class="btn_addToBag">Add To Bag <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button> 
+						<p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Add to wishlist</p>  
+						</div>
 					<p class="products_items_price">$124</p>
 				</figcaption>				
 			</div>
-			<div class="col-xs-12 col-md-3">
+			<div class="col-xs-12 col-md-3 products_x">
 				<figcaption class="products_items">
 					<h4 class="products_items_title">Denim Shorts In Slim Fit</h4>
 					<p class="products_items_type">Short</p>
 					<figure class="products_items_img">
 						<!-- img -->
 					</figure>
+						<div class="products_items_details text-center">
+						<button class="btn_addToBag">Add To Bag <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button> 
+						<p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Add to wishlist</p>  
+						</div>
 					<p class="products_items_price">$124</p>
 				</figcaption>				
 			</div>
@@ -138,8 +160,8 @@
 <div class="products_ad">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-6 products_ad_left">
-				<div class="products_ad_1">
+			<div class="col-xs-12 col-md-6">
+				<div class="products_ad_left">
 					<figure class="products_ad_img">
 						<!-- img -->
 					</figure>
@@ -149,7 +171,7 @@
 						<p class="products_ad_info_price"><del>$83</del> <span class="orange_color">$66</span></p>
 					</figcaption>					
 				</div>
-				<div class="products_ad_2">
+				<div class="products_ad_left">
 				<figure class="products_ad_img">
 					<!-- img -->
 				</figure>
@@ -160,9 +182,9 @@
 				</figcaption>					
 				</div>
 			</div>
-			<div class="col-xs-6 products_ad_right">
+			<div class="col-xs-12 col-md-6 products_ad_right">
 				<p class="products_ad_right_type"><span class="one_line"></span>Denmin</p>
-				<p class="products_ad_right_name">May Lucy Super Skinn</p>
+				<p class="products_ad_right_name"><strong>May Lucy Super Skinn</strong></p>
 				<p class="products_ad_right_price">$148</p>
 			</div>
 		</div>
@@ -171,7 +193,7 @@
 
 <div class="about_us">
 	<div class="container">
-		<div class="row">
+		<div class="row about_us1 text-center">
 			<h1 class="about_us_title">About us</h1>
 			<span class="one_line"></span>
 			<p class="des">With over a decade of experience, we have helped our clients all over the world to create eye-catching and head-turning creative solutions.  We work together from our three UK offices to create high quality work. </p>
@@ -181,77 +203,74 @@
 </div>
 
 <div class="new_posts">
-	<hr>
 	<div class="container">
-		<div class="row">
-			<div class="controls">
-			<span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-			<h5 class="new_posts_heading">new posts</h5>
-			<span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>				
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<figure class="new_posts_img">
-					<img src="#" alt="New post image">
-				</figure>
-				<figcaption class="new_posts_inner">
-					<p class="new_posts_inner_type">Travel</p>
-					<p class="new_posts_inner_title">Fashion Targets Breast Cancer’s Hottest Buys</p>
-					<div class="time">
-						<i class="fa fa-clock-o" aria-hidden="true"></i>
-						16 July at 15:44
-					</div>
-				</figcaption>
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<figure class="new_posts_img">
-					<img src="#" alt="New post image">
-				</figure>
-				<figcaption class="new_posts_inner">
-					<p class="new_posts_inner_type">Travel</p>
-					<p class="new_posts_inner_title">Fashion Targets Breast Cancer’s Hottest Buys</p>
-					<div class="time">
-						<i class="fa fa-clock-o" aria-hidden="true"></i>
-						16 July at 15:44
-					</div>
-				</figcaption>				
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<figure class="new_posts_img">
-					<img src="#" alt="New post image">
-				</figure>
-				<figcaption class="new_posts_inner">
-					<p class="new_posts_inner_type">Travel</p>
-					<p class="new_posts_inner_title">Fashion Targets Breast Cancer’s Hottest Buys</p>
-					<div class="time">
-						<i class="fa fa-clock-o" aria-hidden="true"></i>
-						16 July at 15:44
-					</div>
-				</figcaption>				
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<figure class="new_posts_img">
-					<img src="#" alt="New post image">
-				</figure>
-				<figcaption class="new_posts_inner">
-					<p class="new_posts_inner_type">Travel</p>
-					<p class="new_posts_inner_title">Fashion Targets Breast Cancer’s Hottest Buys</p>
-					<div class="time">
-						<i class="fa fa-clock-o" aria-hidden="true"></i>
-						16 July at 15:44
-					</div>
-				</figcaption>				
-			</div>
-		</div>
+		<div class="row new_posts_border owlCarousel text-center">
+			<h3 class="new_posts_heading ">new posts</h3>
+				<div class="col-xs-12 col-md-3">
+					<figure class="new_posts_img">
+						<img src="#" alt="New post image">
+					</figure>
+					<figcaption class="new_posts_inner">
+						<p class="new_posts_inner_type">Travel</p>
+						<p class="new_posts_inner_title">Fashion Targets Breast Cancer’s Hottest Buys</p>
+						<div class="time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							16 July at 15:44
+						</div>
+					</figcaption>
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<figure class="new_posts_img">
+						<img src="#" alt="New post image">
+					</figure>
+					<figcaption class="new_posts_inner">
+						<p class="new_posts_inner_type">Travel</p>
+						<p class="new_posts_inner_title">Fashion Targets Breast Cancer’s Hottest Buys</p>
+						<div class="time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							16 July at 15:44
+						</div>
+					</figcaption>				
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<figure class="new_posts_img">
+						<img src="#" alt="New post image">
+					</figure>
+					<figcaption class="new_posts_inner">
+						<p class="new_posts_inner_type">Travel</p>
+						<p class="new_posts_inner_title">Fashion Targets Breast Cancer’s Hottest Buys</p>
+						<div class="time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							16 July at 15:44
+						</div>
+					</figcaption>				
+				</div>
+				<div class="col-xs-12 col-md-3">
+					<figure class="new_posts_img">
+						<img src="#" alt="New post image">
+					</figure>
+					<figcaption class="new_posts_inner">
+						<p class="new_posts_inner_type">Travel</p>
+						<p class="new_posts_inner_title">Fashion Targets Breast Cancer’s Hottest Buys</p>
+						<div class="time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							16 July at 15:44
+						</div>
+					</figcaption>				
+				</div>				
+		</div>			
+				
 	</div>
 </div>
 
 <div class="intro">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 intro_video text-center">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/z_7Gz_RFLnE" frameborder="0" allowfullscreen></iframe>
+			<div class="embed-responsive embed-responsive-16by9 intro_video text-center ">
+			  <iframe class="embed-responsive-item" width="100%" height="315" src="https://www.youtube.com/embed/z_7Gz_RFLnE" frameborder="0" allowfullscreen></iframe>
 			</div>
-			<div class="intro_address text-center">
+		</div>
+			<div class="row intro_address text-center">
 				<div class="col-md-4">
 					<figure class="intro_address_img">
 						<img src="img/icon-phone.png">
@@ -279,8 +298,7 @@
 						<p class="intro_address_inner_phoneNumber">info@monica.com</p>
 					</figcaption>					
 				</div>
-			</div>
-		</div>
+			</div>		
 	</div>
 </div>
 
@@ -293,7 +311,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
-				<div class="footer_center">
+				<div class="footer_center text-center">
 					<ul class="footer_center_list">
 						<li class="footer_center_list_items"><a href="#" title="#">Terms & Conditions</a></li>
 						<li class="footer_center_list_items"><a href="#" title="#">Privacy </a></li>
@@ -302,7 +320,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
-				<div class="footer_right">
+				<div class="footer_right text-right">
 					<ul class="footer_right_list">
 						<li class="footer_right_list_items">
 							<a href="#" title="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
