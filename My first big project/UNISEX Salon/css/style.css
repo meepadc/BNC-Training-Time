@@ -1,0 +1,270 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.color-red {
+	color: red;
+}
+
+.container {
+	width: 970px !important;
+}
+/*=======================================================Header==========================================================*/
+.top_header {
+	background: #35373e;
+	padding: 10px 0;
+	color: white;
+}
+
+.top_header_content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.top_header_social {
+	border-right: 1px solid white;
+	position: absolute;
+	right: -120px;
+}
+
+.top_header_social_list {
+	padding-right: 10px;
+	margin: 0;
+	list-style: none;
+}
+
+.top_header_social_items {
+	display: inline-block;
+}
+
+.top_header_social_items a {
+	color: white;
+	font-size: 16px;
+	padding-right: 20px;
+}
+
+.top_header_social_items a:hover {
+	color: white;
+	font-size: 20px;
+}
+
+.shopping_cart a:hover {
+	color: white;
+	font-size: 20px;
+}
+
+.main_header {
+	padding: 40px 0 45px 0;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.main_header_content {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.main_header_right p {
+	font-family: 'OpenSans-Light', sans-serif;
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+.phone_number {
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-size: 20px;
+}
+
+.open_time {
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-size: 18px;
+}
+
+.menu_header {
+	padding: 20px 40px;
+	background: #111;
+	position: absolute;
+	top: 130px;
+	left: 190px;
+	z-index: 2;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu_items {
+	float: left;
+}
+
+.menu_items a {
+	color: white;
+	padding-right: 35px;
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+
+.btn_book {
+	margin-top: -10px;
+	float: right;
+	padding: 8px 20px;
+	color: red;
+	text-transform: capitalize;
+}
+
+
+/*=======================================================Slider==========================================================*/
+
+.slider {
+	position: relative;
+}
+
+.item_slider {
+    position: relative;
+    
+    float: left;
+    overflow: hidden;
+    height: 600px;
+}
+
+.owl-carousel {
+	background: #000;
+	width: 100%;
+	/*height: 600px;*/
+}
+
+.welcome {
+	width: 70%;
+	background-color: #1d1d1d;	
+	z-index: 20px !important;
+	color: white;
+	padding: 55px 25px;
+	position: absolute;
+	top: 180px;
+	left: 190px;
+}
+
+.unisex span {
+	font-family: 'OpenSans-Bold';
+	font-size: 18px;
+}
+
+.welcome h2 {
+	font-family: 'OpenSans-Bold';
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+.unisex-info {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.button-group {
+
+}
+
+.btn_readMore {
+	padding: 10px 20px;
+	color: red;
+	text-transform: capitalize;
+	background: white;	
+}
+
+.btn_readMore:hover {
+	color: white;
+	background: red;	
+}
+
+.btn_ourGallery {
+	padding: 10px 20px;
+	color: white;
+	text-transform: capitalize;
+	background: #1d1d1d;
+	border-color: white;	
+}
+
+.btn_ourGallery:hover {
+	color: #1d1d1d;
+	background: white;	
+}
+
+.owl-dots {
+	color: white;
+	border-color: white !important;
+	position: absolute;
+	top: 0;
+}
+
+.owl-prev {
+	visibility: visible;
+	color: white;
+	position: absolute;
+	top: 300px;
+	left: 20px;
+	font-size: 32px;
+	background: #1d1d1d;
+	width: 50px;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.owl-next {
+	visibility: visible;
+	color: white;
+	position: absolute;
+	top: 300px;
+	right: 20px;
+	font-size: 32px;
+	background: #1d1d1d;
+	width: 50px;
+	text-align: center;
+	border-radius: 8px;
+}
+
+/*Intro*/
+#intro {
+	padding: 40px 150px 100px;
+}
+
+.intro_cubes {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
+.intro_subHeading {
+	color: #444444;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.thumbnail {
+	border: none;
+	display: inline-block;
+}
+
+.lk {
+	width: 150px;
+	height: 150px;
+	background: red;
+	transform: skew(-10deg,0deg);
+	-moz-transform: skew(-10deg,0deg);
+	-webkit-transform: skew(-10deg,0deg);
+	-o-transform: skew(-10deg,0deg);
+	-ms-transform: skew(-10deg,0deg);
+	border: 1px solid red;
+	border-radius: 12px;
+}
+
+
+
+
+
+#footer {
+	margin-top: 20px;
+}

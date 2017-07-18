@@ -1,8 +1,56 @@
-$(document).ready(function() {
- $('.owlCarousel').owlCarousel({
-  items: 1
- })
+// $(document).ready(function() {
+//  $('.owl-carousel').owlCarousel({
+//   items: 1
+//  })
+// });
+
+$(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+	    loop:true,	    
+	    nav:true,
+	    navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i> Prew', 'Next <i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+	    // autoplay:true,
+   		// autoplayTimeout:1000,
+    	// autoplayHoverPause:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:2
+	        },
+	        1000:{
+	            items:4
+	        }
+	    }
+	});
 });
+
+// push menu
+$(document).ready(function() {
+    $('#show_menu').click(function() {
+            $('#menu_box').toggle("slide");
+    });
+});
+// end push menu
+  // $(document).ready(function () {
+  //          var galleryTop = new Swiper('.gallery-top', {
+  //             nextButton: '.swiper-button-next',
+  //             prevButton: '.swiper-button-prev',
+  //             spaceBetween: 10,
+  //         });
+  //         var galleryThumbs = new Swiper('.gallery-thumbs', {
+  //             // spaceBetween: 10,
+  //             centeredSlides: true,
+  //             slidesPerView: 'auto',
+  //             touchRatio: 0.2,
+  //             slideToClickedSlide: true,
+  //             direction:'vertical',
+  //             // autoplay: 5000
+  //         });
+  //         galleryTop.params.control = galleryThumbs;
+  //         galleryThumbs.params.control = galleryTop;      
+  // });
 
 // Menu mobile
 $(document).ready(function() {
