@@ -15,14 +15,14 @@
 
 .service02_item_content {
 	position: absolute;
-	top: 500px;
+	top: 5000px;
 }
 
 .service02_item:hover .service02_item_content {
 	left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-	transition: all 0.5s;
+	transition: all .5s;
 }
 
 .service02_item_content img {
@@ -33,3 +33,84 @@
 	font-size: 12px;
 	opacity: 0.75;
 }
+ 
+/*Affordable Price*/
+
+.affordable_price {
+	background: #f5f5f5;
+	margin: 100px;
+}
+
+.affordable_price_box {
+	padding: 0px;
+	background: #333;
+	width: 100%;
+	color: #fff;
+}
+
+.affordable_price_box_heading {
+	border-bottom: 1px solid #c2c2c2;
+	padding: 40px;
+}
+
+.affordable_price_box_heading img {
+	margin: 0 auto;
+}
+
+.affordable_price_box_heading h2 {
+	margin: 10px;
+}
+
+.affordable_price_box_body {
+	padding: 20px 40px;
+}
+
+.affordable_price_box_body_list ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.affordable_price_box_body_list ul li {
+	padding: 20px;
+	border-bottom: 1px solid #5c5c5c;
+}
+
+.affordable_price_box_body ul li:last-child {
+	border-bottom: none;
+}
+
+.affordable_price_box_footer {
+	padding: 20px;
+	border-top: 1px solid #c2c2c2;
+}
+
+.affordable_price_box_footer span {
+	font-size: 20px;
+}
+
+.btn_footer_buy {
+	padding: 8px 36px;
+	background: #fff;
+	color: red;
+	text-transform: capitalize;
+	margin: 10px 0;
+}
+
+.btn_footer_buy:hover {
+	color: #fff;
+	background: #d00009;
+	border: 1px solid #d00009;
+	font-weight: 600;
+}
+
+.btn_footer_buy_active {
+	padding: 8px 36px;
+	background: #d00009;
+	color: #fff;
+	text-transform: capitalize;
+	margin: 10px 0;	
+	border: 1px solid #d00009;
+}
+
+/*End Affordable Price*/
