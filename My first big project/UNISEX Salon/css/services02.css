@@ -1,0 +1,35 @@
+.heading img {
+	margin: 0 auto;
+}
+
+.service02_item {
+	width: 100%;
+	height: 275px;
+	background: #000;
+	margin-bottom: 30px;
+	color: white;
+	padding: 60px;
+	position: relative;
+	overflow: hidden;
+}
+
+.service02_item_content {
+	position: absolute;
+	top: 500px;
+}
+
+.service02_item:hover .service02_item_content {
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	transition: all 0.5s;
+}
+
+.service02_item_content img {
+	margin: 0 auto;
+}
+
+.service02_item_content_des {
+	font-size: 12px;
+	opacity: 0.75;
+}

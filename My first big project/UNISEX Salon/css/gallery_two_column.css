@@ -1,0 +1,44 @@
+
+.gallery_two_column {
+	padding: 100px 0;
+}
+
+.gallery_item {
+	width: 100%;
+	height: 300px;
+	background: #000;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.button_play .fa-play-circle {
+	position: absolute;
+	font-size: 32px;
+	color: #fff;
+	left: 50%;
+    transform: translate(-50%, 0);
+    top: 400px;
+}
+
+.gallery_item:hover .button_play .fa-play-circle {
+	top: 150px;
+	transition: all 0.5s;
+}
+
+.btn_showAll {
+	padding: 8px 24px;
+	margin: 20px auto;
+	display: block;
+	color: #fff;
+	background: #d00009;
+	border: 1px solid #d00009;
+	border-radius: 8px;
+}
+
+.btn_showAll:hover {
+	background: #fff;
+	color: #d00009;
+	border-color: #d00009;
+}

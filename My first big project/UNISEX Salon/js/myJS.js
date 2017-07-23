@@ -100,3 +100,41 @@ $(document).ready(function(){
         }
     })
 });
+
+$('.clickable1').bind('click', function (ev) {
+    var $div = $(ev.target);
+    var $display = $div.find('.display');
+
+    var offset = $div.offset();
+    var x = ev.clientX - offset.left;
+
+    $('.progress1').width(x);
+});
+
+$('.clickable2').bind('click', function (ev) {
+    var $div = $(ev.target);
+    var $display = $div.find('.display');
+
+    var offset = $div.offset();
+    var x = ev.clientX - offset.left;
+
+    $('.progress2').width(x);
+});
+
+$('.clickable3').bind('click', function (ev) {
+    var $div = $(ev.target);
+    var $display = $div.find('.display');
+
+    var offset = $div.offset();
+    var x = ev.clientX - offset.left;
+
+    $('.progress3').width(x);
+});
+
+ $(document).ready(function() {
+      $('.progress .progress-bar').css("width",
+                function() {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+        )
+    });
