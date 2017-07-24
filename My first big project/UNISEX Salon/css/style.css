@@ -6,10 +6,6 @@ html, body {
 	color: red;
 }
 
-.container {
-	max-width: 970px ;
-	width: 100%;
-}
 
 .fa.fa-wifi {
     -ms-transform: rotate(45deg); /* IE 9 */
@@ -656,11 +652,11 @@ html, body {
 	position: absolute;
 	left: -150px;
 	transition: all .3s;
-
 }
 
 .picture_frame_around:hover .picture_frame_around_hover {
 	left: -90px;
+
 }
 
 .picture_frame_around:hover + .caption .name {
@@ -682,6 +678,7 @@ html, body {
 
 .picture_frame_around_hover_list_item a:hover {
 	font-size: 18px;
+	color: #d00009;
 }
 
 @media (max-width: 480px) {
@@ -790,7 +787,8 @@ html, body {
 }
 
 .owl-carousel3 .owl-dots {
-	left: 430px;
+	left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .products_items .thumbnail {
@@ -892,15 +890,25 @@ html, body {
 	background: #000;
 	border: 1px solid white;
     position: relative;
+    overflow: hidden;
+}
+
+.showcase_items_icon {
+	position: absolute;
+    font-size: 20px;
+    top: 5000px;
+    transform: translate(-50%,-50%);	
 }
 
 .showcase_items_icon a{
-    position: absolute;
     color: #FFFFFF;
-    font-size: 20px;
-    left: 50%;
-    transform: translateX(-45%);
-    top: 105px;
+}
+
+.hv_non_border:hover .showcase_items_icon {
+	top: 50%;
+	left: 50%;
+	transform:  translate(-50%,-50%);
+	transition: all 0.4s;
 }
 
 .owl-carousel4 .owl-dots, .owl-carousel5 .owl-dots {
@@ -919,6 +927,15 @@ html, body {
 .btn_moreGalleries {
     margin: 0 auto;
     display: block;
+    background: #d00009;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn_moreGalleries:hover {
+	background: #fff;
+	color: #d00009;
+	border-color: #d00009;
 }
 
 @media (max-width: 480px) {
@@ -1023,7 +1040,6 @@ html, body {
 }
 
 .footer_top {
-	margin-top: 20px;
 	background: #111;
 	padding-top: 90px;
 	padding-bottom: 20px;
@@ -1161,9 +1177,8 @@ html, body {
 	margin-right: 215px;
 }
 
-input.form-control {
-	width: 300px !important;
-	position: relative;
+.footer_middle_center .input-group {
+	width: 100%;
 	padding-bottom: 15px 0;
 	border-radius: 0;
 }
@@ -1246,8 +1261,9 @@ input.form-control {
 		margin: 10px ;
 	}
 
-	input.form-control {
-		width: auto !important;
+	.footer_middle_center .input-group {
+		width: 80%;
+		display: flex;
 	}
 
 	.input-group {

@@ -1,3 +1,15 @@
+.active_service02 ::after {
+	content: '';
+	background: #d00009;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	left: 0;
+}
+.heading {
+	margin-top: 100px;
+}
+
 .heading img {
 	margin: 0 auto;
 }
@@ -38,7 +50,11 @@
 
 .affordable_price {
 	background: #f5f5f5;
-	margin: 100px;
+	margin: 100px 0;
+}
+
+.affordable_price_bellow {
+	margin: 75px 0;
 }
 
 .affordable_price_box {
@@ -113,4 +129,115 @@
 	border: 1px solid #d00009;
 }
 
+@media (max-width: 991px) {
+	.affordable_price_bellow_item {
+		margin-bottom: 30px;
+	}
+}
+
 /*End Affordable Price*/
+
+/*Sale*/
+.sale {
+    margin-bottom: 100px;
+}
+
+.sale p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.font_size_28 {
+    font-size: 28px;
+}
+
+.btn_book_now {
+    padding: 8px 24px;
+    color: #FFFFFF;
+    background: #d00009;
+    border-color: #d00009;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn_book_now:hover, .btn_book_now:link, .btn_book_now:active {
+    color: #d00009;
+    background: #FFFFFF;
+    border-color: #d00009;
+}
+
+@media (max-width: 991px) {
+
+    .welcome_about {
+        padding: 50px 0;
+    }
+    .slider2 {
+        padding: 60px 0;
+    }
+
+    .box_bellow_small {
+        margin: 0 0 30px;
+    }
+
+    .sale {
+        float: left;
+        width: 100%;
+    }
+
+    .sale p{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .sale_percent {
+        font-size: 36px;
+    }
+}
+
+/*Appointment*/
+.appointment {
+    background: linear-gradient(90deg,#f5f5f5 50%,#000 50%);
+}
+
+.appointment_box {
+	padding: 125px 0;
+}
+
+.appointment .form-control {
+	background: #f5f5f5;
+	border: none;
+	border-radius: 0px;
+	border-bottom: 1px solid #000;
+}
+
+.appointment button {
+	text-transform: capitalize;
+	color: #fff;
+	background: #d00009;
+	padding: 12px 0;
+	margin-top: 40px;
+}
+
+.black_box{
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+@media (max-width: 991px) {
+	.appointment {
+		float: left;
+		width: 100%;
+		background: #f5f5f5;
+	}
+
+	.appointment_box {
+		padding: 50px 0;
+	}
+
+	.appointment_box .form-control {
+		font-size: 12px;
+	}
+}

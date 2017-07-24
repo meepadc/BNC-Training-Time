@@ -1,0 +1,105 @@
+.gallery_list_view {
+	margin: 100px;
+}
+
+.gallery_list_view .row {
+	margin-bottom: 30px;
+}
+
+.gallery_list_view_item_box {
+	width: 100%;
+	height: 337px;
+	background: #000;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.icon_link {
+	position: absolute;
+	top: 1000px;
+}
+
+.icon_link a {
+	color: #fff;
+	font-size: 18px;
+}
+
+.gallery_list_view_item_box:hover .icon_link {
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);	
+}
+
+
+.gallery_list_view_item_content .title{
+	font-family: OpenSans-SemiBold;
+	margin-top: 0;
+}
+
+.gallery_list_view_item_content .type {
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+}
+
+.gallery_list_view_item_content .des1, .des2 {
+	font-family: OpenSans-Light;
+	font-size: 16px;
+}
+
+.social_icon {
+	margin: 30px 0;
+}
+
+.social_icon_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social_icon_list_item {
+	display: inline-block;
+}
+
+.social_icon_list_item a {
+	color: #999;
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+.social_icon_list_item a:hover {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #d00009;
+    border-color: #d00009;
+}
+
+.pagination>li>a {
+	color: #000;
+}
+
+.glyphicon-menu-left, .glyphicon-menu-right {
+	font-size: 10px;
+}
+
+@media (max-width: 991px) {
+	.gallery_list_view {
+		float: left;
+		width: 100%;
+		margin: 30px 0;
+	}
+	
+	.gallery_list_view_item_content {
+		text-align: center;
+	}
+	
+	.gallery_list_view_item_content .title {
+		margin-top: 20px;
+	}
+}

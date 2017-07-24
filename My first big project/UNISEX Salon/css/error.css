@@ -1,0 +1,14 @@
+.error {
+	background: url('../img/bg_404.png');
+	padding: 165px 0;
+}
+
+.error_404 img {
+	margin: 30px auto;
+}
+
+.error_404 button {
+	display: block;
+	margin: 0 auto;
+	background: #d00009;
+}

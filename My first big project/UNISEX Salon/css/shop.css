@@ -1,0 +1,87 @@
+.products{
+    padding: 50px 0;
+    background: #f5f5f5;
+}
+.products .col-md-3{
+    padding: 0;
+}
+.top-products{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.top-products h4{
+    font-family:"Roboto Medium";
+    font-size: 20px;
+    color: #000000;
+}
+.top-products h4 span{
+    font-family:"Roboto Bold";
+    color: #d00009;
+}
+.top-products img{
+    padding-bottom: 10px;
+}
+.top-products i{
+    color: #b8b8b8;
+    font-family:"Roboto Light";
+    padding-top: 15px;
+}
+.box-products h5{
+    font-family:"Roboto Medium";
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.box-products p{
+    font-size: 16px;
+    color: #d00009;
+    font-family:"Roboto Medium";
+}
+.box-products p span{
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #b8b8b8;
+}
+.products .box-img{
+    position: relative;
+    overflow: hidden;
+}
+.box-img:hover img{
+    opacity: 0.5;
+}
+.products .box-img .box-hover{
+    background: url("../img/home1.png")no-repeat;
+    position: absolute;
+    bottom:0;
+    background-size: 100%;
+    height: 35px;
+    width: 130px;
+    left: calc((100% - 130px)/2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -100%;
+    transition: all .3s;
+}
+.products .box-img:hover .box-hover{
+    bottom: 0%;
+}
+.products .box-img .box-hover a{
+    color: #ffffff;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (max-height: 991px) {
+    .products .col-md-3 {
+        margin-bottom: 30px;
+    }
+
+    .products .box-img img {
+        margin: 0 auto;
+    }
+
+    .box-products h5 {
+        margin-top: 20px;
+    }
+}
