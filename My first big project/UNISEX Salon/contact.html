@@ -34,22 +34,26 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li><a href="#">Service 1</a></li>
-										<li><a href="#">Service 2</a></li>
-										<li><a href="#">Service 3</a></li>
-										<li><a href="#">Service 4</a></li>
+										<li><a href="services.html">Service 1</a></li>
+										<li><a href="service02.html">Service 2</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Shop</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Gallery</a></li>
-								<li><a href="#">Page</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="shop.html">Shop</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="services.html">Gallery Two Column</a></li>
+										<li><a href="service02.html">Gallery List View</a></li>
+									</ul>
+								</li>
+								<li><a href="error_404.html">Page</a></li>
+								<li><a href="contact.html">Contact</a></li>
 								<li><a href="#"><button class="btn btn-primary btn_book_moblie">Book now</button></a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
@@ -104,14 +108,27 @@
 			</div>
 			<div class="menu_header container">
 					<ul class="menu">
-					<li class="menu_items"><a href="#" title="menu">home</a></li>
-					<li class="menu_items"><a href="#" title="menu">about</a></li>
-					<li class="menu_items"><a href="#" title="menu">service</a></li>
-					<li class="menu_items"><a href="#" title="menu">shop</a></li>
-					<li class="menu_items"><a href="#" title="menu">blog</a></li>
-					<li class="menu_items"><a href="#" title="menu">gallery</a></li>
-					<li class="menu_items"><a href="#" title="menu">page</a></li>
-					<li class="menu_items"><a href="#" title="menu">contact</a></li>
+					<li class="menu_items"><a href="index.html" title="menu">home</a></li>
+					<li class="menu_items"><a href="about.html" title="menu">about</a></li>
+					<li class="menu_items dropdown">
+						<a href="#" title="menu">service</a>
+						  <div class="dropdown-content">
+						    <a href="services.html">Service 1</a>
+						    <a href="service02.html">Service 2</a>
+						  </div>					
+					</li>
+					<li class="menu_items"><a href="shop.html" title="menu">shop</a></li>
+					<li class="menu_items"><a href="blog.html" title="menu">blog</a></li>
+					<li class="menu_items dropdown">
+						<a href="#" title="menu">gallery</a>
+						  <div class="dropdown-content">
+						    <a href="gallery_two_column.html">Gallery Two Column</a>
+						    <a href="gallery_list_view.html">Gallery List View</a>
+						  </div>		
+					</li>					
+					<li class="menu_items"><a href="error_404.html" title="menu">page</a>
+					</li>
+					<li class="menu_items"><a href="contact.html" title="menu">contact</a></li>
 				</ul>
 				<button type="button" class="btn btn-large btn_book btn-default">book now</button>	
 			</div>								

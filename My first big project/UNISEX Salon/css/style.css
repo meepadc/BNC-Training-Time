@@ -6,13 +6,6 @@ html, body {
 	color: red;
 }
 
-
-.fa.fa-wifi {
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Safari */
-    transform: rotate(45deg);
-}
-
 .banner {
     height: 240px;
     background: #000000;
@@ -126,17 +119,50 @@ html, body {
 
 .menu_items a {
 	color: white;
-	padding-right: 30px;
+	padding: 20px 0;
 	font-family: 'OpenSans-SemiBold', sans-serif;
 	text-transform: capitalize;
 	font-size: 18px;
+	transition: 0.4s ease;
+	margin: 0 20px;
+	text-decoration: none;
 }
+
 
 .menu_items a:hover {
     color: #d00009;
     text-decoration: none;
-    font-size: 20px;
+    border-top: 4px solid #d00009;
+  	border-bottom: 4px solid #d00009;
+  	padding: 6px 0; 
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 260px;
+    z-index: 99;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 20px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #111}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 .btn_book {
 	margin-top: -5px;
@@ -302,7 +328,7 @@ html, body {
 	}
 }
 
-/*Intro*/
+/*=======================================================Intro==========================================================*/
 .intro {
 	padding: 50px;
 }
@@ -385,7 +411,7 @@ html, body {
 	}
 }
 
-/*End intro*/
+/*=======================================================End Intro==========================================================*/
 
 /*Service*/
 
@@ -863,8 +889,8 @@ html, body {
 	}
 
 	.owl-carousel3 .owl-dots {
-        left: 20%;
-		bottom: 0;
+        left: 50%;
+		transform: translate(-50%,0);
     }
 }
 
