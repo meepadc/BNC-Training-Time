@@ -11,4 +11,9 @@
 	display: block;
 	margin: 0 auto;
 	background: #d00009;
+	text-decoration: none;
+}
+
+.error_404 button:hover {
+	text-decoration: none;
 }

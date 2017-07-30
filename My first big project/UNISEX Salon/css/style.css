@@ -848,6 +848,10 @@ html, body {
     overflow: hidden;
 }
 
+.fa-search {
+	padding-right: 20px;
+}
+
 .products .products_items_icon  {
     position: absolute;
     left: 50%;
@@ -919,6 +923,10 @@ html, body {
     overflow: hidden;
 }
 
+.fa-picture-o {
+	padding-left: 25px;
+}
+
 .showcase_items_icon {
 	position: absolute;
     font-size: 20px;
@@ -934,7 +942,7 @@ html, body {
 	top: 50%;
 	left: 50%;
 	transform:  translate(-50%,-50%);
-	transition: all 0.4s;
+	transition: ease-out  0.4s;
 }
 
 .owl-carousel4 .owl-dots, .owl-carousel5 .owl-dots {
@@ -1089,6 +1097,10 @@ html, body {
 
 .footer_address_des {
 	color: #ababab;
+}
+
+.footer_address_main_list_item i {
+	padding-right: 10px;
 }
 
 .footer_address_main_list_item a {
